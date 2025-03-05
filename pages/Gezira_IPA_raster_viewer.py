@@ -31,10 +31,10 @@ alt.themes.enable("dark")
 st.markdown("""
 <style>
 .reportview-container .sidebar-content {{
-    padding-top: {1}rem;
+    padding-top: {0}rem;
 }}
 .reportview-container .main .block-container {{
-    padding-top: {1}rem;
+    padding-top: {0}rem;
 }}
 
 [data-testid="block-container"] {
