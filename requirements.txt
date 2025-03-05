@@ -2,6 +2,8 @@ streamlit
 streamlit_folium 
 pandas
 xarray
+netcdf4
+h5netcdf
 rasterio
 folium
 altair
