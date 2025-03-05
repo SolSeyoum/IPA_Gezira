@@ -299,7 +299,7 @@ def main():
         # st.title("### Gezira IPA RAster Viewer")
         col = st.columns((6.0, 2.0), gap='medium')
         with col[0]:
-            st.markdown(f"#### Gezira IPA Raster Viewer - :blue[{indicator} [{units[indicator]}]] for :blue[{selected_season}] season")
+            st.markdown(f"#### Gezira IPA Raster Viewer: :blue[{indicator} [{units[indicator]}]] for :blue[{selected_season}] season")
             with st.spinner("Loading and processing data..."):
                 display_image(data, transform, crs, variable, nodata, bounds)
 
