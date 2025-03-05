@@ -30,11 +30,15 @@ alt.themes.enable("dark")
 # CSS styling
 st.markdown("""
 <style>
-.reportview-container .sidebar-content {{
-    padding-top: {0}rem;
+.reportview-container .css-1lcbmhc .css-1outpf7 {{
+    padding-top: 35px;
 }}
 .reportview-container .main .block-container {{
+    {max_width_str}
     padding-top: {0}rem;
+    padding-right: {1}rem;
+    padding-left: {1}rem;
+    padding-bottom: {1}rem;
 }}
 
 [data-testid="block-container"] {
