@@ -295,22 +295,21 @@ def main():
         data =  ds.sel(time=slected_time)[variable]
         
         df_stats = get_stats(data)
+    
+        # st.title("### Gezira IPA RAster Viewer")
+        col = st.columns((6.0, 2.0), gap='medium')
+        with col[0]:
+            st.markdown(f"#### Gezira IPA Raster Viewer - :blue[{indicator} [{units[indicator]}]] for :blue[{selected_season}] season")
+            with st.spinner("Loading and processing data..."):
+                display_image(data, transform, crs, variable, nodata, bounds)
+
+        with col[1]:
+            st.write('')
+            st.markdown(f"##### :blue[Stats of {indicator} [{units[indicator]}]]")
+            st.dataframe(df_stats, use_container_width=True)
+            # st.markdown(df_stats.to_html(escape=False),unsafe_allow_html=True)
     except Exception as e:
         st.error(f"An error occurred while processing the data: {str(e)}")
-
-    # st.title("### Gezira IPA RAster Viewer")
-    col = st.columns((6.0, 2.0), gap='medium')
-    with col[0]:
-        st.markdown(f"#### Gezira IPA Raster Viewer - :blue[{indicator} [{units[indicator]}]] for :blue[{selected_season}] season")
-        with st.spinner("Loading and processing data..."):
-            display_image(data, transform, crs, variable, nodata, bounds)
-        
-
-    with col[1]:
-        st.write('')
-        st.markdown(f"##### :blue[Stats of {indicator} [{units[indicator]}]]")
-        st.dataframe(df_stats, use_container_width=True)
-        # st.markdown(df_stats.to_html(escape=False),unsafe_allow_html=True)
                         
             
 if __name__ == "__main__":
