@@ -8,4 +8,5 @@ altair
 plotly
 geopandas
 Pillow
+matplotlib
 
