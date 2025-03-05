@@ -11,12 +11,7 @@ from shapely.ops import unary_union
 from PIL import Image
 
 # Add custom CSS to hide the GitHub icon
-hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
-}
-"""
-st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 #######################
 # Page configuration
 st.set_page_config(
@@ -31,7 +26,12 @@ alt.themes.enable("dark")
 # CSS styling
 st.markdown("""
 <style>
-
+hide_github_icon = """
+#GithubIcon {
+  visibility: hidden;
+}
+"""
+st.markdown(hide_github_icon, unsafe_allow_html=True)
 [data-testid="block-container"] {
     padding-left: 2rem;
     padding-right: 2rem;
