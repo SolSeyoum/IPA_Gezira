@@ -30,6 +30,12 @@ alt.themes.enable("dark")
 # CSS styling
 st.markdown("""
 <style>
+.reportview-container .sidebar-content {{
+    padding-top: {1}rem;
+}}
+.reportview-container .main .block-container {{
+    padding-top: {1}rem;
+}}
 
 [data-testid="block-container"] {
     padding-left: 2rem;
