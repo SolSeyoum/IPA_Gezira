@@ -2,6 +2,7 @@ streamlit
 streamlit_folium 
 pandas
 xarray
+rioxarray
 netcdf4
 h5netcdf
 rasterio
