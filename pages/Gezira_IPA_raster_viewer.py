@@ -81,9 +81,9 @@ img[data-testid="stLogo"] {
 
 # Access wapor via google bucket 
 # dfm.columns = [x.replace('_', ' ') for x in dfm.columns]
-logo_wide = r'data\logo_wide.png'
-logo_small = r'data\logo_small.png'
-ipa_ds_path = r'data\nc\IPA_results_Gezira.nc'
+logo_wide = r'data/logo_wide.png'
+logo_small = r'data/logo_small.png'
+ipa_ds_path = r'data/nc/IPA_results_Gezira.nc'
 
 
 @st.cache_data(ttl=300)
