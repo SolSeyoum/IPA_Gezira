@@ -1,5 +1,8 @@
 streamlit
 pandas
+xarray
+rasterio
+folium
 altair
 plotly
 geopandas
