@@ -74,12 +74,12 @@ img[data-testid="stLogo"] {
 #######################
 # Load data
 # dfm = pd.read_csv(r'data/Mwea_IPA_stat_by_blocks.csv')
-with open(r"data\Gezira_IR.json") as response:
+with open(r"data/Gezira_IR.json") as response:
     geo = json.load(response)
 
 # dfm.columns = [x.replace('_', ' ') for x in dfm.columns]
-logo_wide = r"data\logo_wide.png"
-logo_small = r"data\logo_small.png"
+logo_wide = r"data/logo_wide.png"
+logo_small = r"data/logo_small.png"
 
 IPA_description = {
     "beneficial fraction": ":blue[Beneficial fraction (BF)] is the ratio of the water that is consumed as transpiration\
